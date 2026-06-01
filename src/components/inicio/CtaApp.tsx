@@ -5,15 +5,23 @@ import { enlaces, rutasImagenes } from "@/src/data/inicio";
 export default function CtaApp() {
   return (
     <Seccion className="bg-white pb-0 pt-8 md:pt-10">
-      <div className="contenedor-kunan">
-        <div className="mx-auto grid max-w-[900px] items-end gap-8 rounded-t-kunan border-2 border-b-0 border-marca-secundario bg-marca-acento p-8 md:grid-cols-[1fr_260px] md:px-12 md:pt-10 md:pb-0">
-          <div className="space-y-5 pb-8">
-            <h2 className="text-2xl font-medium uppercase leading-tight text-marca-oscuro md:text-3xl">
-              Descarga la app, <span className="font-manuscrita text-marca-principal">activa tu acceso</span>
-              <br /> y aprovecha tus beneficios
+      <div className="contenedor-kunan overflow-visible">
+        <div className="flex flex-col items-center gap-5 rounded-t-kunan border-2 border-b-0 border-marca-secundario bg-marca-acento md:flex-row md:pb-0">
+          <div className="w-full space-y-6 px-4 pt-4 sm:px-6 sm:pt-6 md:w-[65%] md:pl-[60px] md:pr-0 md:pt-[60px] md:pb-8">
+            <h2 className="font-sans text-[32px] font-medium uppercase leading-snug text-marca-oscuro">
+              Descarga la app,{" "}
+              <span className="texto-manuscrito font-medium text-marca-principal">
+                activa tu acceso
+              </span>{" "}
+              y aprovecha tus beneficios
             </h2>
             <div className="flex flex-wrap gap-4">
-              <a href={enlaces.googlePlay} rel="noopener noreferrer" target="_blank">
+              <a
+                className="transition-transform duration-300 hover:scale-105"
+                href={enlaces.googlePlay}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
                 <Image
                   alt="Disponible en Google Play"
                   height={45}
@@ -21,7 +29,12 @@ export default function CtaApp() {
                   width={152}
                 />
               </a>
-              <a href={enlaces.appStore} rel="noopener noreferrer" target="_blank">
+              <a
+                className="transition-transform duration-300 hover:scale-105"
+                href={enlaces.appStore}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
                 <Image
                   alt="Descargar en App Store"
                   height={45}
@@ -31,14 +44,19 @@ export default function CtaApp() {
               </a>
             </div>
           </div>
-          <Image
-            alt="Aplicación Kunan Salud"
-            className="mx-auto"
-            height={383}
-            src={rutasImagenes.mockupApp}
-            style={{ height: "auto", width: "min(100%, 260px)" }}
-            width={239}
-          />
+          <div className="flex w-full justify-center md:-mt-[80px] md:w-fit md:justify-start md:self-end">
+            <Image
+              alt="Aplicación Kunan Salud"
+              className="w-auto"
+              height={383}
+              src={rutasImagenes.mockupApp}
+              style={{
+                height: "clamp(200px, 45vw, 380px)",
+                width: "auto",
+              }}
+              width={239}
+            />
+          </div>
         </div>
       </div>
     </Seccion>

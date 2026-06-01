@@ -99,4 +99,66 @@ button {
   .texto-manuscrito {
     @apply font-manuscrita font-normal;
   }
+
+  .decorativo-rombos-linea {
+    @apply relative inline-block;
+  }
+
+  .decorativo-rombos-linea::before {
+    content: "";
+    position: absolute;
+    right: calc(100% - 2px);
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2000px;
+    height: 2px;
+    background-color: var(--color-marca-secundario);
+    display: block;
+    pointer-events: none;
+  }
+
+  .texto-linea-derecha {
+    position: relative;
+    display: inline-block;
+    overflow: visible;
+    color: var(--color-marca-oscuro);
+    font-family: var(--fuente-montserrat), Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.1;
+    text-transform: uppercase;
+  }
+
+  .texto-linea-derecha::before {
+    content: none;
+  }
+
+  .tarjeta-beneficio-flecha::before {
+    content: "";
+    position: absolute;
+    right: -22px;
+    top: 50%;
+    display: none;
+    width: 24px;
+    height: 24px;
+    transform: translateY(-50%);
+    background-color: var(--color-marca-principal);
+    pointer-events: none;
+    z-index: 2;
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24'%3E%3Cpath d='m9 5 7 7-7 7' stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='3'/%3E%3C/svg%3E") center / contain no-repeat;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24'%3E%3Cpath d='m9 5 7 7-7 7' stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='3'/%3E%3C/svg%3E") center / contain no-repeat;
+  }
+
+  @media (min-width: 1280px) {
+    .tarjeta-beneficio-flecha::before {
+      display: block;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    .tarjeta-beneficio-flecha-fila::before {
+      display: block;
+    }
+  }
+
 }

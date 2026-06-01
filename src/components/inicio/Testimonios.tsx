@@ -5,16 +5,19 @@ export default function Testimonios() {
   return (
     <Seccion className="bg-white py-8 md:py-12">
       <div className="contenedor-kunan">
-        <div className="mb-6 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-          <div>
-            <p className="text-xs font-bold uppercase tracking-wide text-marca-oscuro">
+        <div className="mb-6">
+          <div className="flex items-center gap-5">
+            <p className="texto-linea-derecha max-w-[280px] shrink-0">
               {testimonio.titulo}
             </p>
-            <h2 className="mt-4 inline-flex rounded-full bg-marca-principal px-8 py-3 text-2xl font-semibold text-white md:text-3xl">
-              conoce sus&nbsp;<span className="texto-manuscrito">testimonios</span>
-            </h2>
+            <span className="h-0.5 flex-1 bg-marca-secundario" />
           </div>
-          <div className="hidden h-px flex-1 bg-marca-secundario md:block" />
+          <h2 className="mt-6 flex w-fit items-center rounded-full bg-marca-principal px-8 py-3 text-3xl font-medium leading-none text-white md:text-[48px]">
+            conoce sus&nbsp;
+            <span className="font-manuscrita font-medium italic leading-none">
+              testimonios
+            </span>
+          </h2>
         </div>
 
         <div className="overflow-hidden rounded-kunan-grande bg-marca-oscuro shadow-kunan">

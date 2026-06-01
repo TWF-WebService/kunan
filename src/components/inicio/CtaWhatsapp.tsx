@@ -8,11 +8,11 @@ export default function CtaWhatsapp() {
     <Seccion className="bg-white py-12 md:py-16">
       <div className="contenedor-kunan grid gap-4 md:grid-cols-[1.8fr_1fr]">
         <div className="relative min-h-[330px] overflow-hidden rounded-kunan border-2 border-marca-principal bg-white p-8 md:p-10">
-          <div className="relative z-10 max-w-[360px] space-y-5">
+          <div className="relative z-10 max-w-[360px] space-y-10">
             <h2 className="text-2xl font-semibold uppercase leading-tight text-marca-oscuro md:text-3xl">
-              Únete a nuestro <br /> WhatsApp
+              Únete a nuestro <br /> <b>WhatsApp</b>
             </h2>
-            <p className="text-sm leading-6 text-marca-texto">
+            <p className="font-sans text-xl leading-snug text-marca-texto">
               Únete al grupo exclusivo para trabajadores. Resuelve dudas, comparte experiencias y entérate de nuevos beneficios.
             </p>
             <Boton href={enlaces.whatsapp} rel="noopener noreferrer" target="_blank">
@@ -30,17 +30,19 @@ export default function CtaWhatsapp() {
         </div>
 
         <div className="flex min-h-[330px] flex-col justify-between rounded-kunan bg-marca-principal p-8 text-white md:p-10">
-          <h2 className="text-2xl font-semibold uppercase leading-tight md:text-3xl">
-            Descarga el manual de uso sobre Kunan
+          <h2 className="font-sans text-3xl font-medium uppercase leading-tight md:text-[38px]">
+            Descarga el manual de uso sobre <b className="font-bold">Kunan</b>
           </h2>
           <a
-            className="inline-flex items-center gap-3 self-start text-xs font-semibold transition hover:text-marca-acento"
+            className="group inline-flex items-center gap-3 self-end font-sans text-base font-semibold transition duration-300 hover:text-marca-acento"
             href={enlaces.manual}
             rel="noopener noreferrer"
             target="_blank"
           >
             Descargar pdf
-            <span className="grid size-7 place-items-center rounded-full bg-marca-borde text-marca-principal">›</span>
+            <span className="grid size-7 place-items-center rounded-full bg-marca-borde text-white transition duration-300 group-hover:bg-white group-hover:text-marca-borde">
+              ›
+            </span>
           </a>
         </div>
       </div>

@@ -1,10 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import type { ReactNode } from "react";
 
 type ElementoAcordeon = {
   pregunta: string;
-  respuesta: string;
+  respuesta: ReactNode;
 };
 
 type PropiedadesAcordeon = {
@@ -23,20 +24,30 @@ export default function Acordeon({ elementos }: PropiedadesAcordeon) {
           <div className="bg-white" key={elemento.pregunta}>
             <button
               aria-expanded={estaAbierto}
-              className="flex w-full items-center justify-between gap-4 py-4 text-left text-sm font-semibold text-marca-oscuro md:text-base"
+              className="flex w-full items-center justify-between gap-4 py-4 text-left text-marca-oscuro"
               onClick={() => setAbierto(estaAbierto ? -1 : indice)}
               type="button"
             >
-              <span>{elemento.pregunta}</span>
+              <span className="font-sans text-2xl font-semibold">
+                {elemento.pregunta}
+              </span>
               <span className="grid size-6 shrink-0 place-items-center text-xl text-marca-oscuro">
                 {estaAbierto ? "-" : "+"}
               </span>
             </button>
-            {estaAbierto ? (
-              <div className="max-w-2xl pb-5 text-xs leading-5 text-marca-texto md:text-sm">
-                {elemento.respuesta}
+            <div
+              className={
+                estaAbierto
+                  ? "grid grid-rows-[1fr] transition-[grid-template-rows] duration-300 ease-in-out"
+                  : "grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-in-out"
+              }
+            >
+              <div className="overflow-hidden">
+                <div className="w-full space-y-3 pb-5 font-sans text-base font-normal leading-relaxed text-marca-texto md:text-lg">
+                  {elemento.respuesta}
+                </div>
               </div>
-            ) : null}
+            </div>
           </div>
         );
       })}

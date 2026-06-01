@@ -9,7 +9,7 @@ type PropiedadesBoton = AnchorHTMLAttributes<HTMLAnchorElement> & {
 };
 
 const clasesPorVariante: Record<VarianteBoton, string> = {
-  principal: "boton-principal",
+  principal: "boton-principal px-5 py-5 font-sans text-lg font-medium uppercase !text-white duration-300 hover:bg-marca-oscuro hover:!text-white hover:opacity-100",
   secundario: "boton-secundario",
   contorno: "boton-contorno",
 };

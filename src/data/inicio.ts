@@ -87,13 +87,13 @@ export const beneficios = [
 ];
 
 export const enlacesFooter = [
-  { texto: "La Ibérica", url: "https://laiberica.com.pe/" },
+  { texto: "Contacto", url: "https://laiberica.com.pe/" },
   { texto: "Libro de reclamaciones", url: "https://laiberica.com.pe/pages/libro-de-reclamaciones" },
   { texto: "Preguntas frecuentes", url: "https://laiberica.com.pe/pages/preguntas-frecuentes" },
-  { texto: "Política de privacidad", url: "https://laiberica.com.pe/policies/privacy-policy" },
-  { texto: "Trabaja con nosotros", url: "https://laiberica.com.pe/pages/trabaja-con-nosotros" },
+  { texto: "Políticas y Privacidad", url: "https://laiberica.com.pe/policies/privacy-policy" },
+  { texto: "Trabaja con Nosotros", url: "https://laiberica.com.pe/pages/trabaja-con-nosotros" },
   { texto: "Compra online", url: "https://delivery.laiberica.com.pe/" },
-  { texto: "Productos", url: "https://laiberica.com.pe/pages/productos" },
+  { texto: "Nuestros productos", url: "https://laiberica.com.pe/pages/productos" },
   { texto: "Nosotros", url: "https://laiberica.com.pe/pages/nosotros" },
   { texto: "Noticias", url: "https://laiberica.com.pe/blogs/news" },
 ];
