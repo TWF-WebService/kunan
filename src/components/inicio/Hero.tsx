@@ -4,7 +4,7 @@ import { rutasImagenes } from "@/src/data/inicio";
 export default function Hero() {
   return (
     <section
-      className="relative isolate h-dvh overflow-hidden bg-marca-oscuro"
+      className="relative isolate h-screen overflow-hidden bg-marca-oscuro"
       id="inicio"
       style={{
         backgroundImage: `url(${rutasImagenes.heroDesktop})`,

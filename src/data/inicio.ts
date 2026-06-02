@@ -101,5 +101,14 @@ export const enlacesFooter = [
 export const testimonio = {
   titulo: "Lo que dice la familia Ibérica",
   subtitulo: "conoce sus testimonios",
-  youtube: "https://www.youtube.com/embed/1EmHWUJk934",
+  videos: [
+    {
+      titulo: "Testimonio de la familia Ibérica",
+      youtube: "https://www.youtube.com/embed/1EmHWUJk934",
+    },
+    {
+      titulo: "Video de Prueba",
+      youtube: "https://www.youtube.com/embed/HydkjjDNTmY",
+    },
+  ],
 };

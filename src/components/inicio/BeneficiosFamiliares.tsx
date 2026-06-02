@@ -27,12 +27,12 @@ export default function BeneficiosFamiliares() {
           <p className="max-w-xl text-sm leading-6 text-marca-texto md:text-base">
             Este beneficio no es solo para ti. Puedes incluir a tus familiares o a quién tú desees (hasta 5 adicionales). ¡Todos se benefician!
           </p>
-          <div className="inline-flex items-center gap-4 text-marca-oscuro">
-            <span className="inline-flex size-20 items-center justify-center rounded-full border-[12px] border-marca-borde bg-marca-principal p-0 text-center text-[28px] font-bold leading-none text-white">
+          <div className="inline-flex max-w-full flex-nowrap items-center gap-2 whitespace-nowrap text-marca-oscuro sm:gap-4">
+            <span className="inline-flex size-14 items-center justify-center rounded-full border-[8px] border-marca-borde bg-marca-principal p-0 text-center text-xl font-bold leading-none text-white sm:size-20 sm:border-[12px] sm:text-[28px]">
               TÚ
             </span>
-            <span className="text-3xl font-bold text-marca-principal">+</span>
-            <span className="text-[28px] font-bold uppercase leading-none tracking-wide">5 adicionales</span>
+            <span className="text-2xl font-bold text-marca-principal sm:text-3xl">+</span>
+            <span className="text-lg font-bold uppercase leading-none tracking-wide sm:text-[28px]">5 adicionales</span>
           </div>
         </div>
       </div>

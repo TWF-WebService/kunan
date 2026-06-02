@@ -16,10 +16,54 @@ const fuenteManuscrita = localFont({
   display: "swap",
 });
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.laiberica.com.pe";
+
 export const metadata: Metadata = {
-  title: "Kunan | La Ibérica",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "Kunan | La Ibérica",
+    template: "%s | Kunan",
+  },
   description:
-    "Plataforma de salud y bienestar para trabajadores y familiares de La Ibérica.",
+    "Kunan es la plataforma de salud y bienestar para trabajadores y familiares de La Ibérica.",
+  applicationName: "Kunan",
+  keywords: [
+    "Kunan",
+    "La Ibérica",
+    "salud",
+    "bienestar",
+    "beneficios",
+    "familiares",
+    "trabajadores",
+  ],
+  authors: [{ name: "La Ibérica" }],
+  creator: "La Ibérica",
+  publisher: "La Ibérica",
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    title: "Kunan | La Ibérica",
+    description:
+      "Plataforma de salud y bienestar para trabajadores y familiares de La Ibérica.",
+    siteName: "Kunan",
+    locale: "es_PE",
+    type: "website",
+    images: [
+      {
+        url: "/imagenes/kunan/destacada_Kunan.jpg",
+        alt: "Kunan, para ti, para los tuyos, para tu bienestar",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Kunan | La Ibérica",
+    description:
+      "Plataforma de salud y bienestar para trabajadores y familiares de La Ibérica.",
+    images: ["/imagenes/kunan/destacada_Kunan.jpg"],
+  },
   icons: {
     icon: "/imagenes/kunan/favicon-kunan.jpg",
   },

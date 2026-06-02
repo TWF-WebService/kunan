@@ -9,6 +9,7 @@ import Introduccion from "@/src/components/inicio/Introduccion";
 import PreguntasFrecuentes from "@/src/components/inicio/PreguntasFrecuentes";
 import Servicios from "@/src/components/inicio/Servicios";
 import Testimonios from "@/src/components/inicio/Testimonios";
+import AnimarAlScroll from "@/src/components/ui/AnimarAlScroll";
 
 export default function PaginaInicio() {
   return (
@@ -16,14 +17,30 @@ export default function PaginaInicio() {
       <Header />
       <main>
         <Hero />
-        <Introduccion />
-        <Servicios />
-        <Testimonios />
-        <Beneficios />
-        <BeneficiosFamiliares />
-        <CtaWhatsapp />
-        <PreguntasFrecuentes />
-        <CtaApp />
+        <AnimarAlScroll>
+          <Introduccion />
+        </AnimarAlScroll>
+        <AnimarAlScroll>
+          <Servicios />
+        </AnimarAlScroll>
+        <AnimarAlScroll>
+          <Testimonios />
+        </AnimarAlScroll>
+        <AnimarAlScroll>
+          <Beneficios />
+        </AnimarAlScroll>
+        <AnimarAlScroll>
+          <BeneficiosFamiliares />
+        </AnimarAlScroll>
+        <AnimarAlScroll>
+          <CtaWhatsapp />
+        </AnimarAlScroll>
+        <AnimarAlScroll>
+          <PreguntasFrecuentes />
+        </AnimarAlScroll>
+        <AnimarAlScroll>
+          <CtaApp />
+        </AnimarAlScroll>
       </main>
       <Footer />
     </>
