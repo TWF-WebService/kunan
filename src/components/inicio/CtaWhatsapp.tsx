@@ -13,7 +13,7 @@ export default function CtaWhatsapp() {
             <h2 className="text-[38px] font-semibold uppercase leading-tight text-marca-oscuro">
               Únete a nuestro <br /> <b>WhatsApp</b>
             </h2>
-            <p className="font-sans text-xl leading-snug text-marca-texto">
+            <p className="w-full font-sans text-xl leading-snug text-marca-texto md:w-3/4">
               Únete al grupo exclusivo para trabajadores. Resuelve dudas, comparte experiencias y entérate de nuevos beneficios.
             </p>
             <Boton href={enlaces.whatsapp} rel="noopener noreferrer" target="_blank">
@@ -31,12 +31,12 @@ export default function CtaWhatsapp() {
           />
         </div>
 
-        <div className="flex min-h-0 flex-col justify-between gap-10 rounded-kunan bg-marca-principal p-5 text-white md:p-10 lg:min-h-[330px]">
-          <h2 className="font-sans text-3xl font-medium uppercase leading-tight md:text-[38px]">
+        <div className="flex min-h-0 flex-col justify-between gap-10 rounded-kunan bg-marca-principal p-5 md:p-10 lg:min-h-[330px]">
+          <h2 className="font-sans text-3xl font-medium text-white uppercase leading-tight md:text-[38px]">
             Descarga el manual de uso sobre <b className="font-bold">Kunan</b>
           </h2>
           <a
-            className="group inline-flex items-center gap-3 self-end font-sans text-base font-semibold transition duration-300 hover:text-marca-acento"
+            className="group inline-flex items-center gap-3 self-end font-sans text-base font-semibold !text-[#FDEBDC] transition duration-300 hover:!text-marca-acento"
             href={enlaces.manual}
             rel="noopener noreferrer"
             target="_blank"

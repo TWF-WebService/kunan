@@ -21,7 +21,7 @@ export default function Introduccion() {
           className="mx-auto self-end"
           height={408}
           src={rutasImagenes.persona}
-          style={{ height: "auto", width: "min(100%, 320px)" }}
+          style={{ height: "auto", width: "min(100%, 440px)" }}
           width={368}
         />
       </div>

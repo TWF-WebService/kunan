@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import type { ReactNode } from "react";
+import { FiMinus, FiPlus } from "react-icons/fi";
 
 type ElementoAcordeon = {
   pregunta: string;
@@ -31,8 +32,12 @@ export default function Acordeon({ elementos }: PropiedadesAcordeon) {
               <span className="font-sans text-2xl font-semibold">
                 {elemento.pregunta}
               </span>
-              <span className="grid size-6 shrink-0 place-items-center text-xl text-marca-oscuro">
-                {estaAbierto ? "-" : "+"}
+              <span className="grid size-8 shrink-0 place-items-center text-marca-oscuro">
+                {estaAbierto ? (
+                  <FiMinus aria-hidden="true" className="size-8" />
+                ) : (
+                  <FiPlus aria-hidden="true" className="size-8" />
+                )}
               </span>
             </button>
             <div

@@ -41,7 +41,7 @@ export default function Servicios() {
 
   return (
     <Seccion className="bg-white py-12 md:py-16">
-      <div className="contenedor-kunan grid gap-10 lg:grid-cols-[0.95fr_1.05fr]">
+      <div className="contenedor-kunan grid gap-10 lg:grid-cols-2">
         <div className="w-full space-y-5">
           <div>
             <h2 className="text-[42px] font-medium uppercase leading-tight text-marca-oscuro">

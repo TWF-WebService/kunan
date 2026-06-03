@@ -35,7 +35,7 @@ export default function PreguntasFrecuentes() {
           ))}
         </div>
 
-        <div className="mx-auto max-w-[900px]">
+        <div className="mx-auto w-full">
           <Acordeon elementos={categoria.preguntas} />
         </div>
       </div>
