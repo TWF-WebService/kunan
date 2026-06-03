@@ -31,7 +31,7 @@ export default function Testimonios() {
       <div className="contenedor-kunan">
         <div className="mb-6">
           <div className="flex items-center gap-5">
-            <p className="texto-linea-derecha max-w-[280px] shrink-0">
+            <p className="texto-linea-derecha max-w-[360px] shrink-0">
               {testimonio.titulo}
             </p>
             <span className="h-0.5 flex-1 bg-marca-secundario" />

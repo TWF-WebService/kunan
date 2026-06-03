@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { FiChevronRight } from "react-icons/fi";
 import Boton from "@/src/components/ui/Boton";
 import Seccion from "@/src/components/ui/Seccion";
 import { enlaces, rutasImagenes } from "@/src/data/inicio";
@@ -8,8 +9,8 @@ export default function CtaWhatsapp() {
     <Seccion className="bg-white py-12 md:py-16">
       <div className="contenedor-kunan grid gap-4 lg:grid-cols-[1.8fr_1fr]">
         <div className="relative min-h-0 overflow-hidden rounded-kunan border-2 border-marca-principal bg-white p-5 md:p-10 lg:min-h-[330px]">
-          <div className="relative z-10 w-full max-w-none space-y-10 md:max-w-[360px]">
-            <h2 className="text-2xl font-semibold uppercase leading-tight text-marca-oscuro md:text-3xl">
+          <div className="relative z-10 w-full max-w-none space-y-10 md:max-w-[440px]">
+            <h2 className="text-[38px] font-semibold uppercase leading-tight text-marca-oscuro">
               Únete a nuestro <br /> <b>WhatsApp</b>
             </h2>
             <p className="font-sans text-xl leading-snug text-marca-texto">
@@ -30,7 +31,7 @@ export default function CtaWhatsapp() {
           />
         </div>
 
-        <div className="flex min-h-0 flex-col gap-10 rounded-kunan bg-marca-principal p-5 text-white md:p-10 lg:min-h-[330px]">
+        <div className="flex min-h-0 flex-col justify-between gap-10 rounded-kunan bg-marca-principal p-5 text-white md:p-10 lg:min-h-[330px]">
           <h2 className="font-sans text-3xl font-medium uppercase leading-tight md:text-[38px]">
             Descarga el manual de uso sobre <b className="font-bold">Kunan</b>
           </h2>
@@ -41,8 +42,8 @@ export default function CtaWhatsapp() {
             target="_blank"
           >
             Descargar pdf
-            <span className="grid size-7 place-items-center rounded-full bg-marca-borde text-white transition duration-300 group-hover:bg-white group-hover:text-marca-borde">
-              ›
+            <span className="grid size-9 place-items-center rounded-full bg-marca-borde text-white transition duration-300 group-hover:bg-white group-hover:text-marca-borde">
+              <FiChevronRight aria-hidden="true" className="size-6" />
             </span>
           </a>
         </div>

@@ -43,7 +43,7 @@ export default function Acordeon({ elementos }: PropiedadesAcordeon) {
               }
             >
               <div className="overflow-hidden">
-                <div className="w-full space-y-3 pb-5 font-sans text-base font-normal leading-relaxed text-marca-texto md:text-lg">
+                <div className="w-full space-y-3 pb-5 font-sans text-xl font-normal leading-relaxed text-marca-texto">
                   {elemento.respuesta}
                 </div>
               </div>

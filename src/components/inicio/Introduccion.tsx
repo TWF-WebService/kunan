@@ -6,7 +6,7 @@ export default function Introduccion() {
   return (
     <Seccion className="overflow-hidden bg-marca-superficie pb-0 pt-10 md:pt-12">
       <div className="contenedor-kunan grid items-end gap-5 md:grid-cols-2 md:gap-10">
-        <div className="space-y-4 self-center pb-10 text-sm leading-snug text-marca-oscuro md:pb-12 md:text-base">
+        <div className="space-y-4 self-center pb-10 text-2xl leading-snug text-marca-oscuro md:pb-12">
           <p>En La Ibérica sabemos que cada día das lo mejor de ti, en tu trabajo y con tu familia.</p>
           <p>
             Por eso hoy cuentas con un respaldo adicional: un <strong>servicio de orientación médica, psicológica y nutricional</strong>, rápido y fácil de usar.

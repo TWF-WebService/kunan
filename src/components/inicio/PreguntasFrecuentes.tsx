@@ -13,7 +13,7 @@ export default function PreguntasFrecuentes() {
     <Seccion className="bg-white py-10 md:py-14">
       <div className="contenedor-kunan">
         <div className="mb-8 text-center">
-          <h2 className="text-3xl font-medium uppercase tracking-wide text-marca-oscuro md:text-4xl">
+          <h2 className="text-[42px] font-medium uppercase tracking-wide text-marca-oscuro">
             Preguntas <span className="font-bold">frecuentes</span>
           </h2>
         </div>

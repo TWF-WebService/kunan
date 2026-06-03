@@ -44,7 +44,7 @@ export default function Servicios() {
       <div className="contenedor-kunan grid gap-10 lg:grid-cols-[0.95fr_1.05fr]">
         <div className="w-full space-y-5">
           <div>
-            <h2 className="text-4xl font-medium uppercase leading-tight text-marca-oscuro md:text-[48px]">
+            <h2 className="text-[42px] font-medium uppercase leading-tight text-marca-oscuro">
               <span className="inline-flex flex-wrap items-center gap-x-4 gap-y-2">
                 <b className="font-medium">KUNAN</b>
               <span className="texto-manuscrito inline-flex items-center justify-center rounded-full bg-marca-principal px-5 py-3 align-middle text-[28px] normal-case leading-none text-white">
@@ -55,7 +55,7 @@ export default function Servicios() {
               <b className="font-medium">DE SALUD Y </b>
               <b className="font-bold">BIENESTAR</b>
             </h2>
-            <p className="mt-5 w-full text-sm leading-5 text-marca-texto md:text-base md:leading-6 lg:max-w-md">
+            <p className="mt-5 w-full text-xl leading-snug text-marca-texto lg:max-w-md">
               Accede a diferentes servicios pensados para acompañarte en el cuidado de tu salud y bienestar, todo desde un solo lugar.
             </p>
           </div>
@@ -63,7 +63,7 @@ export default function Servicios() {
             alt="Kunan en la app"
             height={275}
             src={rutasImagenes.app}
-            style={{ height: "auto", marginInline: "auto", width: "min(100%, 380px)" }}
+            style={{ height: "auto", marginInline: "auto", width: "min(100%, 444px)" }}
             width={444}
           />
         </div>

@@ -30,7 +30,7 @@ export default function Hero() {
               height={401}
               priority
               src={rutasImagenes.slogan}
-              style={{ height: "auto", width: "min(100%, 320px)" }}
+              style={{ height: "auto", width: "min(100%, 480px)" }}
               width={557}
             />
             <div className="mt-6 flex flex-wrap items-center justify-center gap-3 px-2 py-2 lg:ml-auto lg:justify-start lg:gap-5">

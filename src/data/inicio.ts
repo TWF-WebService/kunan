@@ -105,10 +105,6 @@ export const testimonio = {
     {
       titulo: "Testimonio de la familia Ibérica",
       youtube: "https://www.youtube.com/embed/1EmHWUJk934",
-    },
-    {
-      titulo: "Video de Prueba",
-      youtube: "https://www.youtube.com/embed/HydkjjDNTmY",
-    },
+    }
   ],
 };

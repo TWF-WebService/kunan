@@ -96,7 +96,7 @@ export default function Footer() {
             alt="Libro de reclamaciones"
             height={120}
             src={rutasImagenes.libroReclamaciones}
-            style={{ height: "auto", width: "160px" }}
+            style={{ height: "auto", width: "240px" }}
             width={218}
           />
         </div>
