@@ -59,13 +59,15 @@ export default function Servicios() {
               Accede a diferentes servicios pensados para acompañarte en el cuidado de tu salud y bienestar, todo desde un solo lugar.
             </p>
           </div>
-          <Image
-            alt="Kunan en la app"
-            height={275}
-            src={rutasImagenes.app}
-            style={{ height: "auto", marginInline: "auto", width: "min(100%, 444px)" }}
-            width={444}
-          />
+          <div className="hidden xl:block">
+            <Image
+              alt="Kunan en la app"
+              height={275}
+              src={rutasImagenes.app}
+              style={{ height: "auto", marginInline: "auto", width: "min(100%, 444px)" }}
+              width={444}
+            />
+          </div>
         </div>
 
         <div className="w-full">
@@ -83,7 +85,7 @@ export default function Servicios() {
             <div className="mt-5 flex items-center justify-center gap-4">
               <button
                 aria-label="Ver servicio anterior"
-                className="grid size-12 place-items-center rounded-full border-2 border-[#b8955a] bg-white text-[#b8955a] transition duration-300 hover:bg-[#FEEBDC]"
+                className="grid size-12 place-items-center rounded-full border-3 border-[#b8955a] bg-white text-[#b8955a] transition duration-300 hover:bg-[#FEEBDC]"
                 onClick={irAlAnterior}
                 type="button"
               >
@@ -91,7 +93,7 @@ export default function Servicios() {
               </button>
               <button
                 aria-label="Ver siguiente servicio"
-                className="grid size-12 place-items-center rounded-full border-2 border-[#b8955a] bg-white text-[#b8955a] transition duration-300 hover:bg-[#FEEBDC]"
+                className="grid size-12 place-items-center rounded-full border-3 border-[#b8955a] bg-white text-[#b8955a] transition duration-300 hover:bg-[#FEEBDC]"
                 onClick={irAlSiguiente}
                 type="button"
               >

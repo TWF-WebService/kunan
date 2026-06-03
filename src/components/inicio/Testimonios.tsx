@@ -34,10 +34,10 @@ export default function Testimonios() {
             <p className="texto-linea-derecha max-w-[360px] shrink-0">
               {testimonio.titulo}
             </p>
-            <span className="h-0.5 flex-1 bg-marca-secundario" />
+            <span className="hidden h-0.5 flex-1 bg-marca-secundario md:block" />
           </div>
           <div className="mt-6 flex flex-wrap items-center gap-4">
-            <h2 className="w-fit rounded-full bg-marca-principal px-8 py-3 text-3xl font-medium leading-none text-white md:text-[48px]">
+            <h2 className="w-fit rounded-full bg-marca-principal px-8 py-3 text-2xl font-medium leading-none text-white md:text-[48px]">
               {testimonio.subtitulo.split(" ").slice(0, -1).join(" ")}&nbsp;
               <span className="font-manuscrita font-medium italic leading-none">
                 {testimonio.subtitulo.split(" ").at(-1)}
@@ -46,7 +46,7 @@ export default function Testimonios() {
             <div className="hidden flex-1 basis-full items-center justify-end gap-4 lg:flex lg:basis-auto">
               <button
                 aria-label="Ver testimonio anterior"
-                className="grid size-12 place-items-center rounded-full border-2 border-[#b8955a] bg-white text-[#b8955a] transition duration-300 hover:bg-[#FEEBDC] disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-white md:size-14"
+                className="grid size-12 place-items-center rounded-full border-3 border-[#b8955a] bg-white text-[#b8955a] transition duration-300 hover:bg-[#FEEBDC] disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-white md:size-14"
                 disabled={!tieneVariosTestimonios}
                 onClick={irAlAnterior}
                 type="button"
@@ -55,7 +55,7 @@ export default function Testimonios() {
               </button>
               <button
                 aria-label="Ver siguiente testimonio"
-                className="grid size-12 place-items-center rounded-full border-2 border-[#b8955a] bg-white text-[#b8955a] transition duration-300 hover:bg-[#FEEBDC] disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-white md:size-14"
+                className="grid size-12 place-items-center rounded-full border-3 border-[#b8955a] bg-white text-[#b8955a] transition duration-300 hover:bg-[#FEEBDC] disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-white md:size-14"
                 disabled={!tieneVariosTestimonios}
                 onClick={irAlSiguiente}
                 type="button"
@@ -79,7 +79,7 @@ export default function Testimonios() {
         <div className="mt-5 flex items-center justify-center gap-4 lg:hidden">
           <button
             aria-label="Ver testimonio anterior"
-            className="grid size-12 place-items-center rounded-full border-2 border-[#b8955a] bg-white text-[#b8955a] transition duration-300 hover:bg-[#FEEBDC] disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-white md:size-14"
+            className="grid size-12 place-items-center rounded-full border-3 border-[#b8955a] bg-white text-[#b8955a] transition duration-300 hover:bg-[#FEEBDC] disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-white md:size-14"
             disabled={!tieneVariosTestimonios}
             onClick={irAlAnterior}
             type="button"
@@ -88,7 +88,7 @@ export default function Testimonios() {
           </button>
           <button
             aria-label="Ver siguiente testimonio"
-            className="grid size-12 place-items-center rounded-full border-2 border-[#b8955a] bg-white text-[#b8955a] transition duration-300 hover:bg-[#FEEBDC] disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-white md:size-14"
+            className="grid size-12 place-items-center rounded-full border-3 border-[#b8955a] bg-white text-[#b8955a] transition duration-300 hover:bg-[#FEEBDC] disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-white md:size-14"
             disabled={!tieneVariosTestimonios}
             onClick={irAlSiguiente}
             type="button"
