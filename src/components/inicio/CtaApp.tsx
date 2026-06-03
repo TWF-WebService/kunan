@@ -15,7 +15,7 @@ export default function CtaApp() {
               </span>{" "}
               y aprovecha tus beneficios
             </h2>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap justify-center gap-4 md:justify-start">
               <a
                 className="transition-transform duration-300 hover:scale-105"
                 href={enlaces.googlePlay}
@@ -51,7 +51,7 @@ export default function CtaApp() {
               height={383}
               src={rutasImagenes.mockupApp}
               style={{
-                height: "clamp(200px, 45vw, 380px)",
+                height: "clamp(280px, 80vw, 380px)",
                 width: "auto",
               }}
               width={239}

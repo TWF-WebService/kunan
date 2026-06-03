@@ -29,14 +29,14 @@ export default function Acordeon({ elementos }: PropiedadesAcordeon) {
               onClick={() => setAbierto(estaAbierto ? -1 : indice)}
               type="button"
             >
-              <span className="font-sans text-2xl font-semibold">
+              <span className="font-sans text-xl font-semibold md:text-2xl">
                 {elemento.pregunta}
               </span>
-              <span className="grid size-8 shrink-0 place-items-center text-marca-oscuro">
+              <span className="grid size-5 shrink-0 place-items-center text-marca-oscuro md:size-8">
                 {estaAbierto ? (
-                  <FiMinus aria-hidden="true" className="size-8" />
+                  <FiMinus aria-hidden="true" className="size-5 md:size-8" />
                 ) : (
-                  <FiPlus aria-hidden="true" className="size-8" />
+                  <FiPlus aria-hidden="true" className="size-5 md:size-8" />
                 )}
               </span>
             </button>
@@ -48,7 +48,7 @@ export default function Acordeon({ elementos }: PropiedadesAcordeon) {
               }
             >
               <div className="overflow-hidden">
-                <div className="w-full space-y-3 pb-5 font-sans text-xl font-normal leading-relaxed text-marca-texto">
+                <div className="w-full space-y-3 pb-5 font-sans text-lg font-medium leading-relaxed text-marca-texto md:text-xl">
                   {elemento.respuesta}
                 </div>
               </div>
