@@ -4,7 +4,7 @@ import { enlaces, rutasImagenes } from "@/src/data/inicio";
 
 export default function CtaApp() {
   return (
-    <Seccion className="bg-white pb-0 pt-8 md:pt-10">
+    <Seccion className="bg-white pb-0 pt-20 mt-12 md:pt-10">
       <div className="contenedor-kunan overflow-visible">
         <div className="flex flex-col items-center gap-5 rounded-t-kunan border-2 border-b-0 border-marca-secundario bg-marca-acento md:flex-row md:pb-0">
           <div className="w-full space-y-6 px-4 pt-4 sm:px-6 sm:pt-6 md:w-[65%] md:pl-[60px] md:pr-0 md:pt-[60px] md:pb-8">
