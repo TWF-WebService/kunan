@@ -92,13 +92,20 @@ export default function Footer() {
         </div>
 
         <div className="flex justify-center">
-          <Image
-            alt="Libro de reclamaciones"
-            height={120}
-            src={rutasImagenes.libroReclamaciones}
-            style={{ height: "auto", width: "240px" }}
-            width={218}
-          />
+          <a
+            aria-label="Abrir libro de reclamaciones"
+            href={enlaces.libroReclamaciones}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <Image
+              alt="Libro de reclamaciones"
+              height={120}
+              src={rutasImagenes.libroReclamaciones}
+              style={{ height: "auto", width: "240px" }}
+              width={218}
+            />
+          </a>
         </div>
       </div>
     </footer>

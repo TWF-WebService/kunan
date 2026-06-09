@@ -23,6 +23,7 @@ export const enlaces = {
   appStore: "https://apps.apple.com/pe/app/kunan-salud/id1567338325",
   googlePlay: "https://play.google.com/store/search?q=kunan%20salud&c=apps",
   correo: "mailto:atencionalcliente@laiberica.com.pe",
+  libroReclamaciones: "https://laiberica.com.pe/pages/libro-de-reclamaciones",
 };
 
 export const servicios = [
