@@ -104,8 +104,16 @@ export const testimonio = {
   subtitulo: "conoce sus testimonios",
   videos: [
     {
-      titulo: "Testimonio de la familia Ibérica",
-      youtube: "https://www.youtube.com/embed/1EmHWUJk934",
+      titulo: "Un beneficio que también cuida a los tuyos",
+      youtube: "https://youtu.be/1EmHWUJk934?si=sYkS9Z0RNMYia3Mu",
+    },
+        {
+      titulo: "Esto es lo que dicen nuestros trabajadores",
+      youtube: "https://youtu.be/EQMCB-N7-0I?si=IaCVl4z-DLuhTW5V",
+    },
+        {
+      titulo: "Conoce Kunan, tu plataforma de bienestar",
+      youtube: "https://youtu.be/ILTgjyxATbk?si=uMaWhqRyVgcyI4ic",
     }
   ],
 };
