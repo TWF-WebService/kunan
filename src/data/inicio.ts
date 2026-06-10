@@ -105,15 +105,15 @@ export const testimonio = {
   videos: [
     {
       titulo: "Un beneficio que también cuida a los tuyos",
-      youtube: "https://youtu.be/1EmHWUJk934?si=sYkS9Z0RNMYia3Mu",
+      youtube: "https://www.youtube.com/watch?v=1EmHWUJk934",
     },
         {
       titulo: "Esto es lo que dicen nuestros trabajadores",
-      youtube: "https://youtu.be/EQMCB-N7-0I?si=IaCVl4z-DLuhTW5V",
+      youtube: "https://www.youtube.com/watch?v=EQMCB-N7-0I",
     },
         {
       titulo: "Conoce Kunan, tu plataforma de bienestar",
-      youtube: "https://youtu.be/ILTgjyxATbk?si=uMaWhqRyVgcyI4ic",
+      youtube: "https://www.youtube.com/watch?v=ILTgjyxATbk",
     }
   ],
 };
