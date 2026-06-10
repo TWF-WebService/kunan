@@ -5,10 +5,31 @@ import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import Seccion from "@/src/components/ui/Seccion";
 import { testimonio } from "@/src/data/inicio";
 
+const obtenerUrlYoutubeEmbed = (url: string) => {
+  try {
+    const youtubeUrl = new URL(url);
+
+    if (youtubeUrl.hostname.includes("youtube.com") && youtubeUrl.pathname === "/watch") {
+      const videoId = youtubeUrl.searchParams.get("v");
+      return videoId ? `https://www.youtube.com/embed/${videoId}` : url;
+    }
+
+    if (youtubeUrl.hostname.includes("youtu.be")) {
+      const videoId = youtubeUrl.pathname.replace("/", "");
+      return videoId ? `https://www.youtube.com/embed/${videoId}` : url;
+    }
+
+    return url;
+  } catch {
+    return url;
+  }
+};
+
 export default function Testimonios() {
   const [indiceActivo, setIndiceActivo] = useState(0);
   const tieneVariosTestimonios = testimonio.videos.length > 1;
   const videoActivo = testimonio.videos[indiceActivo];
+  const videoActivoUrl = obtenerUrlYoutubeEmbed(videoActivo.youtube);
 
   const irAlAnterior = () => {
     if (!tieneVariosTestimonios) return;
@@ -71,7 +92,7 @@ export default function Testimonios() {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
             className="aspect-video w-full"
-            src={videoActivo.youtube}
+            src={videoActivoUrl}
             title={videoActivo.titulo}
           />
         </div>
